@@ -1,6 +1,7 @@
 #pragma once
 #include <cstdio>
 #include <utility>
+#include <stdexcept>
 
 template<class T, size_t SIZE>
 class MyAllocator {

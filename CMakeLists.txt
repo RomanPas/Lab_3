@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.2)
 
 if($ENV{TRAVIS_BUILD_NUMBER})
-	project(ip VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+	project(allocator VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 else()
-	project(ip VERSION 0.0.1)
+	project(allocator VERSION 0.0.1)
 endif()
 
 set(LIB_DIR ${CMAKE_SOURCE_DIR}/lib)

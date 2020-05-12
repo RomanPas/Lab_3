@@ -49,6 +49,9 @@ public:
 	}
 
 	void deallocate(pointer p, size_type numObjects) {
+		if (numObjects < 1)
+			throw std::invalid_argument("numObjects < 1");
+
 		--count_;
 		if (!count_) {
 			operator delete(p);

@@ -1,4 +1,5 @@
 #pragma once
+#include <cstdio>
 #include <utility>
 
 template<class T, size_t SIZE>

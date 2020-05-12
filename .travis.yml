@@ -1,7 +1,8 @@
 language: cpp
+install: 
+  - sudo apt-get install -qq g++-7
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 90
 before_script:
-- sudo apt-get install libboost-test-dev -y
-- echo "deb http://archive.ubuntu.com/ubuntu xenial main universe" | sudo tee -a /etc/apt/sources.list
 - sudo apt-get update -qq
 script:
 - cmake .
